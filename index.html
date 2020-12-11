@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dư đoán địa điểm du lịch</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-info text-white border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Trang chủ</div>
+      <div class="list-group list-group-flush">
+        <a href="./index.html" class="list-group-item list-group-item-action bg-info text-white">Dự đoán địa điểm du
+          lịch</a>
+        <a href="./member.html" class="list-group-item list-group-item-action bg-info text-white">Thành viên</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="content-background">
+      <div class="container">
+        <div class="text-center">
+          <button class="btn btn-primary float-left" id="menu-toggle">Menu</button>
+          <h1 class="text-danger">Gợi ý địa điểm du lịch</h1>
+        </div>
+        <form>
+          <div class="row">
+            <div class="col-6">
+              <div class="card" style="min-height: 300px;">
+                <div class="card-header text-center">
+                  <h3>Thông tin du lịch</h3>
+                </div>
+                <div class="card-body">
+                  <p>Số người tham gia</p>
+                  <select name="numPerson" id="numPerson" style="width:100%">
+                    <option value="1">Một mình</option>
+                    <option value="2-4">Nhóm 2-4 người</option>
+                    <option value="5-8">Nhóm 5-8 người</option>
+                    <option value="10-20">Nhóm 10-20 người</option>
+                    <option value="20+">Nhóm trên 20 người</option>
+                  </select>
+                  <!-- <div class="card-body row">
+                     <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="numPer" value="1">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Một mình
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="numPer" id="" value="2-4">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Nhóm 2-4 người
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="numPer" value="5-8">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Nhóm 5-8 người
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="numPer" value="10-20">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Nhóm 10-20 người
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="numPer" value="20+">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Nhóm trên 20 người
+                      </label>
+                    </div>
+
+                  </div> -->
+                  <p>Địa điểm ở miền nào?</p>
+                  <select name="domain" id="domain" style="width:100%">
+                    <option value="north">Miền Bắc</option>
+                    <option value="central">Miền Trung</option>
+                    <option value="south">Miền Nam</option>
+                  </select>
+                  <!-- <div class="card-body row">
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="domain" value="north">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Miền bắc
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="domain" id="" value="central">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Miền trung
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="domain" value="south">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Miền nam
+                      </label>
+                    </div>
+                  </div>  -->
+                  <p>Nơi nghỉ ngơi</p>
+                  <select name="location" id="location" style="width:100%">
+                    <option value="hotel">Khách sạn</option>
+                    <option value="homestay">Homestay</option>
+                    <option value="none">Không ở</option>
+                  </select>
+                  <div class="card-body row">
+                    <!-- <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="location" value="khachsan">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Khách sạn
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="location" value="homestay">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Homestay
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="location" value="none">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Không ở
+                      </label>
+                    </div> -->
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="checkbox" name="location" id="anotherLocation" value="">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Khác
+                      </label>
+                    </div>
+                    <div class="form-check col-8">
+                      <input class="form-check-input"  style="width:100%"type="text" name="location" id="inputAnotherLocation" value="">
+                    </div>
+                  </div>
+                  <p>Phương tiện di chuyển</p>
+                  <select name="trans" id="trans" style="width:100%">
+                    <option value="motobike">Xe máy</option>
+                    <option value="coach">Xe khách</option>
+                    <option value="airplane">Máy bay</option>
+                    <option value="car">Ô tô</option>
+                    <option value="train">Tàu lửa</option>
+                  </select>
+                  <div class="card-body row">
+                    <!-- <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="trans" value="xemay">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Xe máy
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="trans" value="xekhach">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Xe khách
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="trans" value="maybay">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Máy bay
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="trans" value="oto">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Ô tô
+                      </label>
+                    </div>
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="radio" name="location" value="taulua">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Tàu lửa
+                      </label>
+                    </div> -->
+                    <div class="form-check col-4">
+                      <input class="form-check-input" type="checkbox" name="trans" id="anotherTrans" value="">
+                      <label class="form-check-label" for="exampleRadios1">
+                        Khác
+                      </label>
+                    </div>
+                    <div class="form-check col-8">
+                      <input class="form-check-input" style="width:100%" type="text" name="trans" id="inputAnotherTrans" value="">
+                    </div>
+                  </div>
+                  <p>Số ngày du lịch</p>
+                  <select name="day" id="day" style="width:100%">
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <br />
+              <br/>
+              <button type="button" class="btn btn-primary btn-lg btn-block">
+                Gợi ý
+                <svg style="margin-top:-5px" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cursor-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103z" />
+                </svg>
+              </button>
+              <br />
+              <br />
+              <button type="button" class="btn btn-primary btn-lg btn-block">Giải thích
+                <svg style="margin-top:-5px" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stickies-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M0 1.5A1.5 1.5 0 0 1 1.5 0H13a1 1 0 0 1 1 1H1.5a.5.5 0 0 0-.5.5V14a1 1 0 0 1-1-1V1.5z" />
+                  <path fill-rule="evenodd"
+                    d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zm6 8.5v4.396c0 .223.27.335.427.177l5.146-5.146a.25.25 0 0 0-.177-.427H10.5a1 1 0 0 0-1 1z" />
+                </svg>
+              </button>
+              <br />
+              <br />
+              <!-- <button type="button" class="btn btn-primary btn-lg btn-block">Thoát
+                <svg style="margin-top:-5px" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-octagon-fill"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zm-6.106 4.5a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                </svg>
+              </button> -->
+
+            </div>
+            <div class="col-4">
+              <div class="card" style="min-height: 300px;">
+                <div class="card-header text-center">
+                  <h3>Gởi ý địa điểm du lịch</h3>
+                </div>
+                <div class="card-body">
+
+                </div>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+      $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+
+</body>
+
+</html>
